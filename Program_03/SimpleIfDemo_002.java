@@ -1,0 +1,25 @@
+/**Language:Java Standard Edition
+ * Author:Luther
+ */
+package Program_03;
+
+/**
+ * @author LiuYu
+ *
+ */
+import java.util.Scanner;
+
+public class SimpleIfDemo_002 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter an integer: ");
+		int number = input.nextInt();
+		
+		if(number % 5 == 0)
+			System.out.println("HiFive");
+		
+		if(number % 2 == 0)
+			System.out.println("HiEven");
+	}
+
+}
