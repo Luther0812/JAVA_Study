@@ -19,7 +19,7 @@ public class Chapter_Test_013 {
 		System.out.print("Enter number of years: ");
 		int years = input.nextInt();
 		
-		double value = amount * Math.pow((1 + rate / 100), (years));
+		double value = amount * Math.pow((1 + rate / 100), (12 * years));
 		
 		System.out.println("Accumulated value is " + value);
 	}
