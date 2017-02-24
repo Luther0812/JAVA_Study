@@ -17,42 +17,34 @@ public class Chapter_Test_021 {
 		System.out.print("Enter the number of slots in the bean machine: ");
 		int slot = input.nextInt();
 		
-		int[] slots = new int[slot];
-		for(int i = 1; i <= balls; i++){
+		int[] slots = new int[slot + 1];
+		for(int i = 0; i < balls; i++){
+			int count = 0;
 			for(int j = 1; j <= slot; j++){
 				int place = (int)(Math.random() * 2);
 				if(place == 0){
 					System.out.print("L");
 				}else{
 					System.out.print("R");
-					slots[i]++;
+					count++;
 				}
 			}
+			slots[count]++;
 			System.out.println();
 		}
 		int max = max(slots);
-//		for(int i = 0; i < max; i++){
-//			for(int j = 0; j < slot; j++){
-//				if(slots[j] == max - i){
-//					System.out.print("0");
-//					slots[j]--;
-//				}else{
-//					System.out.print(" ");
-//				}
-//			}
-//			System.out.println();
-//		}
 		
-		for(int i = 0;i < max;i++){  
-            for(int j = 0;j < slot;j++){  
-                if(slots[j] == max - i){  
+		for(int i = 0; i < max; i++){  
+            for(int j = 0; j < slot; j++){  
+                if(slots[j] == max - i){
                     System.out.print('0');  
                     slots[j]--;  
                 }  
-                else  
-                    System.out.print(' ');  
-            }  
-            System.out.println();  
+                else{
+                	System.out.print(' ');
+                }
+            }
+            System.out.println();
         }
 		
 	}
