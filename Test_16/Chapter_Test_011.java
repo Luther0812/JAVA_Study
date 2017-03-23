@@ -22,7 +22,7 @@ public class Chapter_Test_011 extends JFrame{
 	}
 	
 	public Chapter_Test_011(){
-		NewPanel_012 p = new NewPanel_012();
+		NewPanel_011 p = new NewPanel_011();
 		add(p);
 		
 		p.setFocusable(true);
