@@ -11,9 +11,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Chapter_Test_012 extends JFrame{
+public class Chapter_Test_011 extends JFrame{
 	public static void main(String[] args){
-		Chapter_Test_012 frame = new Chapter_Test_012();
+		Chapter_Test_011 frame = new Chapter_Test_011();
 		frame.setTitle("Chapter_Test_012");
 		frame.setSize(200, 300);
 		frame.setLocationRelativeTo(null);
@@ -21,7 +21,7 @@ public class Chapter_Test_012 extends JFrame{
 		frame.setVisible(true);
 	}
 	
-	public Chapter_Test_012(){
+	public Chapter_Test_011(){
 		NewPanel_012 p = new NewPanel_012();
 		add(p);
 		
