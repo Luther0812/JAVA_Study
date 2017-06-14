@@ -26,4 +26,8 @@ public class UnweightedGraph<V> extends AbstractGraph<V> {
 		super(edges, numberOfVertices);
 	}
 
+	public List<Integer> getHamiltonianPath(V vertex) {
+		return null;
+	}
+
 }
